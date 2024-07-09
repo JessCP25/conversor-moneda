@@ -29,11 +29,3 @@ Se utilizó java.io las operaciones de entrada/salida de Api
 Se Conectó la aplicación con una API de tipos de cambio en tiempo real, ya que las tasas cambian constantemente permitiendo que la aplicación siga funcionando de manera correcta independientemennte del  cambio en las tasas  monetarias
 
 ![image](https://user-images.githubusercontent.com/94869227/175204627-89f42e4b-7d02-4ff2-81db-8553204c0936.png)
-
-Se usaron validaciones para que a la hora de ingresar la información se  pudiera recibir la respuesta correcta
-
-se  usaron Excepciones como NumberFormatException para poder evitar problemas de parte del Api, del programa o del usuario
-
-se usó  la librería  javax.swing.JOptionPane para el manejo de interfaces gráficas, permitiendo mostrar el conocimiento adquirido en el lenguaje Java de una forma más accesible al usuario
-
-El código  se agrupó en clases y en paquetes (package) para que su comprensión  y mantenimiento fuera más fácil y entendible  
