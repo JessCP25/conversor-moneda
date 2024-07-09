@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Principal {
     public static void main(String[] args) {
         Scanner lectura = new Scanner(System.in);
-        ConsultarMoneda consulta = new ConsultarMoneda();
 
         int opcion = 0;
 
@@ -21,21 +20,38 @@ public class Principal {
             System.out.println("Elija una opción valida:");
             System.out.println("******************************************************");
             opcion = Integer.valueOf(lectura.nextLine());
+            Conversor convertir = new Conversor();
+            String respuesta;
             switch (opcion) {
                 case 1:
+                    respuesta = convertir.convertirMoneda("USD", "ARS");
+                    System.out.println(respuesta);
                     break;
                 case 2:
+                    respuesta = convertir.convertirMoneda("ARS", "USD");
+                    System.out.println(respuesta);
                     break;
                 case 3:
+                    respuesta = convertir.convertirMoneda("USD", "BRL");
+                    System.out.println(respuesta);
                     break;
                 case 4:
+                    respuesta = convertir.convertirMoneda("BRL", "USD");
+                    System.out.println(respuesta);
                     break;
                 case 5:
+                    respuesta = convertir.convertirMoneda("USD", "COP");
+                    System.out.println(respuesta);
                     break;
                 case 6:
+                    respuesta = convertir.convertirMoneda("COP", "USD");
+                    System.out.println(respuesta);
+                    break;
+                case 7:
+                    System.out.println("Saliendo...");
                     break;
                 default:
-                    opcion = 0;
+                    System.out.println("Opción no válida, intente nuevamente.");
                     break;
             }
         }
