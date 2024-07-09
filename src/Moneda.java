@@ -1,2 +1,4 @@
-public record Moneda(String result, String base_code, String target_code, int conversion_rate, int conversion_result) {
+import java.util.Map;
+
+public record Moneda(String result, String base_code, Map<String, Double> conversion_rates) {
 }
